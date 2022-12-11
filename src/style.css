@@ -1,0 +1,87 @@
+.app {
+    margin: 20px auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-aglakon {
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(to bottom, orange, rgb(212, 125, 12));
+    padding: 20px 40px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.btn-aglakon:hover {
+    background-image: linear-gradient(to top, orange, rgb(212, 125, 12));
+}
+
+.app main {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.add-player {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #e2ffe2;
+    border: 1px solid greenyellow;
+}
+
+.add-player h2 {
+    margin: 0;
+}
+
+.add-player textarea {
+    display: block;
+    border: 1px solid lightseagreen;
+    border-radius: 4px;
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 400px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.add-player button {
+    cursor: pointer;
+    border: none;
+    background-color: green;
+    padding: 14px;
+    width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.players-list {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.player-card {
+    height: 180px;
+    width: 180px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.active-card {
+    background-color: aquamarine;
+}

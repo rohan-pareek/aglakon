@@ -15,7 +15,7 @@ function App() {
   const updatePlayers = (players) => {
     const allPlayers = players.split('\n') || [];
 
-    setActivePlayers(allPlayers.filter(player => (player !== null && player !== '')));
+    setActivePlayers([...allPlayers.filter(player => (player !== null && player !== ''))]);
   }
 
   const pickPlayer = () => {
@@ -34,6 +34,9 @@ function App() {
         <Players players={activePlayers} activeIndex={activeIndex} />
         <AddPlayers updatePlayers={updatePlayers} />
       </main>
+      <footer>
+      &#123;Developed by Rohan Pareek&#125;
+      </footer>
     </section>
   );
 }
